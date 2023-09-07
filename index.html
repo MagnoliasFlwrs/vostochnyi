@@ -3,59 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
     <title>Главная</title>
 </head>
 <body>
     <header class="header">
         <div class="header-row">
             <div class="content">
-                <a class="el-torg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M2 3C2 2.44772 2.44772 2 3 2H11C11.2652 2 11.5196 2.10536 11.7071 2.29289L21.7071 12.2929C22.0976 12.6834 22.0976 13.3166 21.7071 13.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3ZM4 4V10.5858L13 19.5858L19.5858 13L10.5858 4H4Z" fill="#8AB73A"/>
-                        <path d="M9 7.5C9 8.32843 8.32843 9 7.5 9C6.67157 9 6 8.32843 6 7.5C6 6.67157 6.67157 6 7.5 6C8.32843 6 9 6.67157 9 7.5Z" fill="#8AB73A"/>
-                      </svg>
-                      <p>Электронные торги</p>
-                </a>
-                <ul class="phone-wrap">
-                    <li>
-                        <a href="#">+375 17 266 53 13</a>
-                        <ul class="phone-content">
-                            <li>
-                                <a href="tel:+375172665343">
-                                    <img src="./src/assets/images/header/phone.png" alt="phone-icon">
-                                    <span>+375 17 266-53-43</span>
-                                </a>
-                                <a href="#">
-                                    <img src="./src/assets/images/header/telegram.png" alt="telegram">
-                                    <span>Написать в Telegram</span>
-                                </a>
-                                <a href="#">
-                                    <img src="./src/assets/images/header/viber.png" alt="viber">
-                                    <span>Написать в Viber</span>
-                                </a>
-                                <a href="#">
-                                    <img src="./src/assets/images/header/watsapp.png" alt="watsapp">
-                                    <span>Написать в WhatsApp</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">RU</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./src/assets/images/header/eye.png" alt="eye-icon">
-                        </a>
-                    </li>
-                </ul>
+                <div class="header-row-inner">
+                    <a href="#" class="el-torg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 3C2 2.44772 2.44772 2 3 2H11C11.2652 2 11.5196 2.10536 11.7071 2.29289L21.7071 12.2929C22.0976 12.6834 22.0976 13.3166 21.7071 13.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3ZM4 4V10.5858L13 19.5858L19.5858 13L10.5858 4H4Z" fill="#8AB73A"/>
+                            <path d="M9 7.5C9 8.32843 8.32843 9 7.5 9C6.67157 9 6 8.32843 6 7.5C6 6.67157 6.67157 6 7.5 6C8.32843 6 9 6.67157 9 7.5Z" fill="#8AB73A"/>
+                          </svg>
+                          <span>Электронные торги</span>
+                    </a>
+                    <ul class="phone-wrap">
+                        <li class="phone-link">
+                            <a class="phone-dropdown" href="#">+375 17 266 53 13</a>
+                            <ul class="phone-content">
+                                <li>
+                                    <a href="tel:+375172665343">
+                                        <img src="./src/assets/images/header/phone.png" alt="phone-icon">
+                                        <span>+375 17 266-53-43</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./src/assets/images/header/telegram.png" alt="telegram">
+                                        <span>Написать в Telegram</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./src/assets/images/header/viber.png" alt="viber">
+                                        <span>Написать в Viber</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./src/assets/images/header/watsapp.png" alt="watsapp">
+                                        <span>Написать в WhatsApp</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lang">
+                            <a href="#">RU</a>
+                            <ul class="lang-content">
+                                <li><a href="#">RU</a></li>
+                                <li><a href="#">BY</a></li>
+                            </ul>
+                        </li>
+                        <li class="eye-type">
+                            <a  href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M2 12C2 12 5.63636 5 12 5C18.3636 5 22 12 22 12C22 12 18.3636 19 12 19C5.63636 19 2 12 2 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header-row">
-            <div class="content"></div>
+            <div class="content">
+                <div class="header-row-inner">
+                    <a href="/" class="logo">
+                        <img src="./src/assets/images/header/logo.png" alt="logo" width="200" height="51">
+                    </a>
+                    <div class="header-field">
+                        <input type="text" placeholder="Поиск">
+                        <button type="submit" class="search-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="#8AB73A"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#8AB73A"/>
+                                    <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#8AB73A"/>
+                                    <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#8AB73A"/>
+                                  </svg>
+                                  <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4ZM6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8ZM8 18C6.34315 18 5 19.3431 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 18.2386 5.23858 16 8 16H16C18.7614 16 21 18.2386 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 19.3431 17.6569 18 16 18H8Z" fill="#8AB73A"/>
+                                  </svg>
+                                  <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="header-row">
-            <div class="content"></div>
+            <div class="content">
+                <div class="header-row-inner">
+                    <ul>
+                        <li>
+                            <a class="dropdown" href="#">Интернет-магазин</a>
+                            <ul>
+                                <li>
+                                    <a class="dropright" href="#">Одежда, обувь, головные уборы, ткани, кожа</a>
+                                    <ul>
+                                        <li><a href="#">Обувь</a></li>
+                                        <li><a href="#">Ткани, трикотажные полотна и текстильные материалы</a></li>
+                                        <li><a href="#">Украшения, бижутерия</a></li>
+                                        <li><a href="#">Швейные изделия, одежда, предметы одежды</a></li>
+                                        <li><a href="#">Шкуры и выделанная кожа</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Подарочная продукция</a></li>
+                                <li><a class="dropright" href="#">Спорт, отдых, увлечения</a></li>
+                                <li><a class="dropright" href="#">Биотовары, корма для животных</a></li>
+                                <li><a class="dropright" href="#">Бумага, канцелярские товары, печатные изданиия</a></li>
+                                <li><a href="#">Ветеринарное оборудование и принадлежности</a></li>
+                                <li><a class="dropright" href="#">Галантерея, парфюмерия</a></li>
+                                <li><a class="dropright" href="#">Запчасти, оборудование, все для транспорта</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown" href="#">Ваш выбор</a>
+                        </li>
+                        <li>
+                            <a class="dropdown" href="#">Автотранспорт</a>
+                            <ul>
+                                <li><a href="#">Аукционы</a></li>
+                                <li><a href="#">Автозапчасти</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown" href="#">Недвижимость</a>
+                            <ul>
+                                <li><a href="#">Аукционы</a></li>
+                                <li><a href="#">Аукцион на право заключения договора аренды</a></li>
+                                <li><a href="#">Аренда</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown" href="#">Услуги</a>
+                            <ul>
+                                <li><a href="#">Организация и проведение аукционов</a></li>
+                                <li><a href="#">Оценка имущества</a></li>
+                                <li><a href="#">Аренда недвижимости</a></li>
+                                <li><a href="#">Реклама</a></li>
+                                <li><a href="#">Перевозка грузов и транспортных средств</a></li>
+                                <li><a href="#">СТО</a></li>
+                                <li><a href="#">Хранение имущества</a></li>
+                                <li><a href="#">Хранение транспортных средств</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Каталог конфиската</a>
+                        </li>
+                        <li>
+                            <a class="dropdown" href="#">О компании</a>
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -64,5 +186,6 @@
     <footer>
 
     </footer>
+    <script src="./src/assets/js/script.js"></script>
 </body>
 </html>
