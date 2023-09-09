@@ -46,8 +46,8 @@ const mobileDropdownLinks = document.querySelectorAll('.mobile-dropdown-item');
 function activateMobileDropdown() {
     mobileDropdownLinks.forEach(el => {
         el.addEventListener('click' , (e)=> {
-            el.classList.toggle('mob-dropdown-open');
-            el.nextElementSibling.classList.toggle('open-mob-submenu');
+            el.classList.toggle('active');
+            el.nextElementSibling.classList.toggle('active');
         })
     })
 }
