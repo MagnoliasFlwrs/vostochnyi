@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./main-page.css);
 
 * {
     margin: 0;
@@ -77,4 +78,26 @@ body {
     max-width: calc(1440px + 16px * 2);
     padding: 0 16px;
     margin: 0 auto;
+}
+
+.btn-1 {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #DEE2F6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--blue);
+}
+.btn-1:hover {
+    color: #fff;
+    background-color: #9FAAE9;
+    transition: 0.0001s linear;
+}
+.btn-1:hover svg path {
+    stroke: #fff;
 }

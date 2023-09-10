@@ -59,3 +59,14 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.custom-swiper-next',
+      prevEl: '.custom-swiper-prev',
+    },
+  });
