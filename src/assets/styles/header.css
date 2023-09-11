@@ -240,6 +240,7 @@
     background-color: var(--bg);
     opacity: 0;
     visibility: hidden;
+    z-index: 15;
 }
 .row-navigation .row-navigation-item:hover {
     background-color: var(--bg);

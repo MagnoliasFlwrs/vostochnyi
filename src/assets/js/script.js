@@ -62,9 +62,6 @@ window.addEventListener('resize', () => {
 
 const swiper = new Swiper('.swiper', {
     loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
     navigation: {
       nextEl: '.custom-swiper-next',
       prevEl: '.custom-swiper-prev',
