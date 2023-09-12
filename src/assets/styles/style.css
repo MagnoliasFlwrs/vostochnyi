@@ -93,7 +93,20 @@ body {
     line-height: normal;
     color: var(--blue);
 }
-.btn-1:hover {
+.btn-2 {
+    display: flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+}
+.btn-1:hover , .btn-2:hover {
     color: #fff;
     background-color: #9FAAE9;
     transition: 0.0001s linear;

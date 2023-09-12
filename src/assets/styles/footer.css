@@ -126,6 +126,12 @@
     .footer-info {
         padding: 0 0 50px;
     }
-
-
+}
+@media (max-width:420px)  {
+    .footer-col .footer-phone a {
+        font-size: 25px;
+    }
+    .footer-col {
+        gap: 20px;
+    }
 }

@@ -60,8 +60,34 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.variables-swiper', {
     loop: true,
+    navigation: {
+      nextEl: '.custom-swiper-next',
+      prevEl: '.custom-swiper-prev',
+    },
+  });
+
+  const swiper2 = new Swiper('.partners-swiper', {
+    loop: true,
+    slidesPerView: 1.5,
+    freeMode:true,
+    breakpoints: {
+        320: {
+          slidesPerView: 2.5,
+          spaceBetween: 20
+        },
+        450:{
+            slidesPerView: 3,
+        },
+        900: {
+          slidesPerView: 5,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 7,
+        }
+      },
     navigation: {
       nextEl: '.custom-swiper-next',
       prevEl: '.custom-swiper-prev',
