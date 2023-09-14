@@ -146,3 +146,54 @@ sortBtns.forEach(el=> {
     }
   })
 })
+
+const sortStyleBtns = document.querySelectorAll('.sort-style-btn');
+const productsBody =  document.querySelector('.catalog-body .products-cards');
+const productsCards = document.querySelectorAll('.product-card');
+
+function clearSortStyleClasses() {
+  sortStyleBtns?.forEach(el=> {
+    if (el.classList.contains('active')) {
+      el.classList.remove('active');
+    }
+    // if (productsBody.classList.contains('grid-style')){
+    //   productsBody.classList.remove('grid-style')
+    // }
+    // if (productsBody.classList.contains('rows-style')){
+    //   productsBody.classList.remove('rows-style')
+    // }
+    // productsCards.forEach(el=> {
+    //   if(el.classList.contains('rows-card-style')) {
+    //     el.classList.remove('rows-card-style');
+    //   }
+    //   if(el.classList.contains('grid-card-style')) {
+    //     el.classList.remove('grid-card-style');
+    //   }
+      
+    // })
+  })
+}
+
+sortStyleBtns?.forEach(el => {
+  el.addEventListener('click' , ()=> {
+    console.log(el)
+    if (el.classList.contains('grid')) {
+      clearSortStyleClasses();
+      el.classList.add('active');
+      // productsBody.classList.add('grid-style');
+      // productsCards.forEach(el=> {
+      //   el.classList.add('grid-card-style')
+      // })
+    }
+    if (el.classList.contains('rows')) {
+      clearSortStyleClasses();
+      el.classList.add('active');
+      // productsBody.classList.add('rows-style');
+      // productsCards.forEach(el=> {
+      //   el.classList.add('rows-card-style')
+      // })
+    }
+  })
+})
+
+
