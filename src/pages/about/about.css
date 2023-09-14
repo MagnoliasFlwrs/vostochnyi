@@ -1,0 +1,122 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+.head-row {
+    padding: 25px 0;
+    background-color: var(--blue);
+}
+.head-row .breadcrumbs {
+    margin: 0;
+}
+.head-row .breadcrumbs a {
+    color: #fff;
+}
+.head-row .breadcrumbs .last-breadcrumb a{
+    color: #B4B9D0;
+}
+.head-row .breadcrumbs svg path {
+    stroke: #fff;
+}
+.block-1 {
+    background-image: url(../../assets/images/about/main.png);
+    background-repeat: no-repeat;
+    background-size: calc(50% - 50px) 100%;
+    background-position: left;
+
+}
+
+.row-1 {
+    background-color: var(--blue);
+    position: relative;
+    z-index: -1;
+}
+.row-1 .content {
+    display: flex;
+    justify-content: flex-end;
+}
+.row-1 .content h1 {
+    max-width:calc(50% - 50px) ;
+    width: 100%;
+    text-align: left;
+    color: #FFF;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 100%;
+    margin-bottom: 75px;
+}
+.block-1 .content  {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.row-2 {
+    max-width:calc(50% - 50px) ;
+    width: 100%;
+    padding: 50px 0 30px;
+}
+.row-2 h2 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+.row-2 p {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--gray);
+}
+.about-swiper {
+    padding: 50px 0;
+}
+.about-swiper .swiper-slide {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.about-swiper .swiper-slide img {
+    border-radius: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+.about-text {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+.comment {
+    border-radius: 10px;
+    border: 1px solid rgba(198, 202, 226, 0.50);
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}
+.comment p:first-child {
+    color: #8AB73A;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 76.6%;
+}
+.comment p:last-child {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--blue);
+}

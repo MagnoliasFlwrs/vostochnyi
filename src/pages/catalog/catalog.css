@@ -202,6 +202,7 @@
     box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.25);
     align-items: center;
     gap: 50px;
+    flex-shrink: 0;
 }
 .product-row-card .product-image {
     width: 250px;
@@ -263,7 +264,7 @@
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='16' fill='none'/%3E%3Cpath d='M12 16H20' stroke='%23484848' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
     display: block;
     margin-top: 5px;
-    
+
 }
 .product-quantity span:last-child::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M5 1L5 9' stroke='%23484848' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M1 5H9' stroke='%23484848' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -301,4 +302,11 @@
 }
 .product-row-card .product-col .btn-1:hover svg path {
     fill: #fff;
+}
+.controls {
+    padding: 100px 0;
+
+}
+.control-panel {
+    background-color: #F8F9FF;
 }
