@@ -89,7 +89,7 @@
     visibility: hidden;
     z-index: 5;
 }
-.shops:hover .shops-list {
+.shops-list.active {
     visibility: visible;
     opacity: 1;
 }
@@ -159,4 +159,28 @@
 }
 .tab-content.active {
     display: block;
+}
+.shop-search .filter-field{
+    min-width: 100px;
+    width: 100%;
+}
+
+@media (max-width:1340px) {
+    .tabs-panel {
+        gap: 20px;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: 0; 
+    }
+    .tabs-panel::-webkit-scrollbar {
+        display: none;
+      }
+    .tabs-panel li {
+        flex-shrink: 0;
+    }
+}
+@media (max-width:768px) {
+    .head-row h1 {
+        font-size: 35px;
+    }
 }

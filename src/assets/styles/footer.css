@@ -5,6 +5,10 @@
     background-color:#F8F9FF;
     color: var(--gray);
 }
+.blue-footer {
+    background-color: var(--blue);
+    color: #fff;
+}
 .footer-row:first-child {
     display: flex;
     gap: 50px;
@@ -39,6 +43,8 @@
     line-height: normal;
     color: var(--gray);
 }
+
+
 .footer-col li:first-child {
     color: #C6CAE2;
     font-size: 16px;
@@ -90,7 +96,11 @@
     font-weight: 400;
     line-height: 140%;
 }
-
+.blue-footer .footer-col li ,.blue-footer  .footer-col li a ,.blue-footer  .footer-col li span ,
+.blue-footer .footer-col li:first-child ,
+.blue-footer .footer-info p {
+    color: #FFF;
+}
 @media (max-width:1368px) {
     .footer-col {
         padding: 0 30px;
@@ -133,5 +143,8 @@
     }
     .footer-col {
         gap: 20px;
+    }
+    .footer-row:first-child ul {
+        flex-wrap: wrap;
     }
 }

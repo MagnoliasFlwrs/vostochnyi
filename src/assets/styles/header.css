@@ -71,6 +71,7 @@
     background-color: var(--blue);
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
 }
 .phone-wrap .phone-link  .phone-content li a{
     display: flex;
@@ -81,6 +82,9 @@
     font-weight: 400;
     line-height: normal;
     color: #fff;
+}
+.phone-content li:hover {
+    background-color: #9FAAE9;
 }
 
 .phone-link:hover {
@@ -274,8 +278,9 @@
     width: 280px;
     padding: 30px 25px;
     border-radius: 0 0 10px 10px;
-    background-color: var(--bg);
+    background-color: #DEE2F6;
 }
+
 .dropright {
     display: flex;
     justify-content: space-between;

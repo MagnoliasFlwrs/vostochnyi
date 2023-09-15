@@ -96,10 +96,30 @@ const swiper = new Swiper('.variables-swiper', {
 
   const swiper3 = new Swiper('.about-swiper', {
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 1,
     navigation: {
       nextEl: '.about-btn-next',
       prevEl: '.about-btn-prev',
+    },
+    breakpoints: {
+      450:{
+          slidesPerView: 1.5,
+      },
+      560:{
+        slidesPerView: 1.8,
+      },
+      680:{
+        slidesPerView: 2.5,
+      },
+      900: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+      1340: {
+        slidesPerView: 5,
+      }
     },
 
   });
@@ -114,18 +134,36 @@ const shopSelect = document.querySelector('.shops');
 const shopsOptions = document.querySelectorAll('.shops-list li');
 const shopsSelectBody = document.querySelector('.shops-list');
 
-regionsOptions.forEach(el => {
-    el.addEventListener('click' , ()=> {
-      regionSelect.querySelector('p').innerHTML = el.innerHTML;
-      regionSelect.dataset.current = el.dataset.value;
-    })
-})
-shopsOptions.forEach(el => {
-  el.addEventListener('click' , ()=> {
-    shopSelect.querySelector('p').innerHTML = el.innerHTML;
-    shopSelect.dataset.current = el.dataset.value;
+if (regionSelect) {
+  regionSelect.addEventListener('mouseenter' , () => {
+    regionsSelectBody.classList.add('active');
   })
-})
+  regionSelect.querySelector('p').addEventListener('click' , () => {
+    regionsSelectBody.classList.add('active');
+  })
+  regionsOptions.forEach(el => {
+      el.addEventListener('click' , ()=> {
+        regionSelect.querySelector('p').innerHTML = el.innerHTML;
+        regionSelect.dataset.current = el.dataset.value;
+        regionsSelectBody.classList.remove('active')
+      })
+  })
+}
+if (shopSelect) {
+  shopSelect.addEventListener('mouseenter' , () => {
+    shopsSelectBody.classList.add('active');
+  })
+  shopSelect.querySelector('p').addEventListener('click' , () => {
+    shopsSelectBody.classList.add('active');
+  })
+  shopsOptions.forEach(el => {
+    el.addEventListener('click' , ()=> {
+      shopSelect.querySelector('p').innerHTML = el.innerHTML;
+      shopSelect.dataset.current = el.dataset.value;
+      shopsSelectBody.classList.remove('active');
+    })
+  })
+}
 
 
 // sort btns
