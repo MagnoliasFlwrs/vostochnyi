@@ -124,6 +124,43 @@ const swiper = new Swiper('.variables-swiper', {
 
   });
 
+  var swiper4 = new Swiper(".gallery-mini", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper5 = new Swiper(".gallery", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".gallery-button-next",
+      prevEl: ".gallery-button-prev",
+    },
+    thumbs: {
+      swiper: swiper4,
+    },
+  });
+  const swiper6 = new Swiper('.viewed-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.viewed-btn-next',
+      prevEl: '.viewed-btn-prev',
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+      1450: {
+        slidesPerView: 3,
+      }
+    },
+
+  });
+
 
 // custom select
 
@@ -266,3 +303,16 @@ function makeActive(target){
 
 
 });
+
+
+// heart
+
+const hearts = document.querySelectorAll('.heart-icon');
+
+hearts.forEach(el => {
+  el.addEventListener('click' , (event)=> {
+    event.stopPropagation()
+    el.classList.toggle('active');
+  })
+})
+

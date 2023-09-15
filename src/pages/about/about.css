@@ -367,9 +367,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    max-width: 32%;
-    width: 100%;
+    width: 460px;
 }
+
 .block-3-card:hover {
     background: #fff;
 }
@@ -422,6 +422,21 @@
     .block-1 {
         background-size: calc(50% - 50px) auto;
         background-position: left;
+    }
+
+}
+@media (max-width:1370px) {
+    .block-3-card .row p{
+        font-size: 18px;
+    }
+    .block-3-card .city {
+        font-size: 40px;
+    }
+    .block-3-btn {
+        font-size: 18px;
+    }
+    .shop-info-wrap p  {
+        font-size: 18px;
     }
 }
 @media (max-width:1200px) {
@@ -494,5 +509,11 @@
     .shop-image-wrap {
         width: 200px;
         height: 200px;
+    }
+}
+@media (max-width:1418px) {
+    .shop-cards , .block-3-cards {
+        justify-content: center;
+        gap: 30px;
     }
 }
