@@ -1,0 +1,407 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/vanilla-calendar.min.css);
+@import url(../../assets/styles/light.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+.head-row {
+    padding: 25px 0 50px;
+    background-color: var(--blue);
+}
+.breadcrumbs li a {
+    color: #FFF;
+}
+.breadcrumbs li svg path{
+    stroke:#FFF
+}
+.breadcrumbs .last-breadcrumb a {
+    color: #9FAAE9;
+}
+.head-row h1 {
+    color: #FFF;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+.link-row {
+    display: flex;
+    gap: 50px;
+}
+.auction-link {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #9FAAE9;
+}
+.auction-link span {
+    color: #9FAAE9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.auction-link:hover {
+    border: 1px solid #fff;
+    background-color: #FFF;
+}
+.auction-link:hover span {
+    color: var(--gray);
+}
+.auction-link:hover svg path {
+    fill:var(--gray) ;
+}
+.auction-body {
+    padding-bottom: 50px;
+}
+.vertical-filter {
+    display: flex;
+    width: 330px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 20px; */
+    border-radius: 10px;
+    border: 1px solid #EDEFF8;
+    background: #FBFCFF;
+    cursor: pointer;
+}
+.vertical-filter-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter-title {
+    color: #484848;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 170%; /* 27.2px */
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-title::after , .date::after , .auction-form p::after , .objects p::after {
+    content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.33301 9L12.333 15L18.333 9' stroke='%23555E90' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    display: block;
+}
+.filter-title.opened::after , .auction-form:hover p::after , .object-list li p::after{
+    content: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 15.5L12 9.5L18 15.5' stroke='%23555E90' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.filter-item {
+    width: 100%;
+}
+.filter-item-title {
+    color: #555E90;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.update a {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #9CA2C8;
+}
+.update a span {
+    color: #FFF;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.vanilla-calendar-arrow::before {
+    background-color: #555E90!important;
+}
+[data-calendar-theme="light"] .vanilla-calendar-week__day {
+    color: #999CA0 ;
+}
+[data-calendar-theme="light"] .vanilla-calendar-day__btn {
+    color: #555E90;
+}
+[data-calendar-theme="light"] .vanilla-calendar-day__btn_selected {
+    border-radius: 8px;
+    background: #555E90;
+    color: #fff;
+}
+[data-calendar-theme="light"] .vanilla-calendar-day__btn_selected:hover {
+    background: #9FAAE9;
+}
+[data-calendar-theme="light"] .vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate, [data-calendar-theme="light"] .vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate:hover {
+    background-color: #4E46B41F;
+    border-radius: 0;
+    color: var(--blue);
+}
+[data-calendar-theme="light"] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate, [data-calendar-theme="light"] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate, [data-calendar-theme="light"] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate:hover, [data-calendar-theme="light"] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_selected.vanilla-calendar-day__btn_intermediate:hover {
+    background: #4E46B41F;
+    color: var(--blue);
+}
+.sort {
+    background-color: #fff;
+}
+.regions-list {
+    width: 100%;
+}
+.regions p {
+    width: 100%;
+    justify-content: space-between;
+}
+.date , .auction-form , .objects{
+    border-radius: 10px;
+    border: 1px solid #C6CAE2;
+    background: #FFF;
+    padding: 20px;
+    position: relative;
+    height: 64px;
+    position: relative;
+    color: #696969;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.auction-form p , .objects p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.vanilla-calendar {
+    width: 100%;
+}
+
+.auction-list, .object-list{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #C6CAE2;
+    background: #FFF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 5;
+}
+.object-list {
+    top: 0;
+}
+.auction-form:hover .auction-list{
+    display: flex;
+}
+.objects:hover .object-list{
+    display: flex;
+}
+.object-list li , .object-list li p {
+    width: 100%;
+}
+.custom-checkbox span {
+    color: #696969;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.price-inputs {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.price-inputs input {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 80px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    border: 1px solid #C6CAE2;
+    background: #FFF;
+    width: calc((100% - 20px)/2);
+    outline: none;
+}
+.price-inputs input::placeholder {
+    color: #696969;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.f-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.f-box-btns {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.f-box-btns button{
+    width: calc((100% - 20px)/2);
+}
+.f-box-subm {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    gap: 80px;
+    border-radius: 10px;
+    background: #8AB73A;
+    color: #FFF;
+    font-family: Rounded Mplus 1c;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+}
+.f-box-res {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    border: 1px solid #DEE2F6;
+    color: #CDD0E6;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+}
+.filters-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.vertical-filter-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.opened.vertical-filter-body  {
+    padding-top: 20px;
+    max-height: 1500px;
+    height: auto;
+}
+.rules {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.rules li {
+    display: flex;
+    gap: 10px;
+}
+.rules li a {
+    color: #484848;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.rules li::before {
+    content: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.13339 5.82813L11.7761 8.47084L11.7761 9.2108L9.13339 11.8535L8.38286 11.1136L10.1165 9.36936L4.22852 9.36936L4.22852 8.31228L10.1165 8.31228L8.37229 6.56809L9.13339 5.82813Z' fill='%238AB73A'/%3E%3C/svg%3E");
+    display: block;
+    margin-top: 4px;
+}
+.rules li a:hover {
+    color: var(--green);
+}
+.auction-body .content {
+    display: flex;
+    gap: 40px;
+}
+.products-cards {
+    padding: 0;
+}
+.auction-date {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.auction-date span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555E90;
+    text-align: center;
+    font-family: Rounded Mplus 1c;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.auction-date span:last-child {
+    color: #555E90;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.btn-row a {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #8AB73A;
+    color: #FFF;
+    font-family: Rounded Mplus 1c;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.product-card:hover .auction-date {
+    display: none;
+}
+.product-card:hover .hidden-row {
+    height: 100%;
+
+}
+.product-card:hover .product-price-new {
+    color: var(--green);
+}

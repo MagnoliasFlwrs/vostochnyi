@@ -162,6 +162,46 @@ const swiper = new Swiper('.variables-swiper', {
   });
 
 
+  const options = {
+    settings : {
+      selection: {
+        day: 'multiple-ranged',
+      },
+      visibility: {
+        weekend: false,
+        today: false,
+      },
+    },
+    input: true,
+    actions: {
+      changeToInput(e, HTMLInputElement, dates, time, hours, minutes, keeping) {
+        if (dates[1]) {
+          dates.sort((a, b) => +new Date(a) - +new Date(b));
+          HTMLInputElement.value = `${dates[0]} — ${dates[dates.length - 1]}`;
+          setTimeout(()=> {
+            calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
+          }, 2000)
+        } else if (dates[0]) {
+          HTMLInputElement.value = dates[0];
+          setTimeout(()=> {
+            calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
+          }, 2000)
+        } else {
+          HTMLInputElement.value = '';
+          setTimeout(()=> {
+            calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
+          }, 2000)
+        }
+
+      },
+    },
+  };
+  const calendar = new VanillaCalendar('#calendar-input-div' , options);
+  calendar.init();
+  const calendar2 = new VanillaCalendar('#calendar-input-div2' , options);
+  calendar2.init();
+  const calendar3 = new VanillaCalendar('#calendar-input-div' , options);
+  calendar3.init();
 // custom select
 
 const regionSelect =  document.querySelector('.regions');
@@ -316,3 +356,12 @@ hearts.forEach(el => {
   })
 })
 
+// vertical-filter
+
+document.querySelectorAll('.vertical-filter').forEach((el) => {
+  el.querySelector('.filter-title').addEventListener('click' , ()=> {
+    el.querySelector('.vertical-filter-body').classList.toggle('opened');
+  })
+
+
+});
