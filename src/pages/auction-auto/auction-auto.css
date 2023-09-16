@@ -1,0 +1,182 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/vanilla-calendar.min.css);
+@import url(../../assets/styles/light.min.css);
+@import url(../auction-nedv/auction-nedvizh.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+
+.auction-body .controls {
+    justify-content: center;
+}
+.auction-wrapper .products-cards {
+    padding-top: 0;
+}
+.sort {
+    background-color: #fff;
+}
+.vanilla-calendar {
+    width: 100%;
+    z-index: 10;
+}
+.select-list {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #C6CAE2;
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 5;
+}
+.models , .fuel , .condition {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #C6CAE2;
+    background: #FFF;
+    position: relative;
+}
+.models p  , .fuel p  , .condition p {
+    color: #696969;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.select-list li {
+    width: 100%;
+}
+.select-list li p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.models p::after  , .fuel p::after  , .condition p::after  {
+    content: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.33301 9L12.333 15L18.333 9' stroke='%23555E90' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    display: block;
+}
+.select-list  li p::after{
+    content: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 15.5L12 9.5L18 15.5' stroke='%23555E90' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.models:hover .select-list , .fuel:hover .select-list , .condition:hover .select-list {
+    display: flex;
+}
+.opened.vertical-filter-body {
+    max-height: 1674px;
+}
+.product-card .product-name {
+    -webkit-line-clamp: 1;
+}
+.pink-btn {
+    margin-top: auto;
+}
+
+.product-card:hover .auction-date{
+    display: block;
+}
+.product-card:hover .product-price-new  {
+    color: #484848;
+}
+
+.product-card-wrap {
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+}
+.product-card-wrap .product-card-row , .product-card-wrap .product-image {
+    margin: 0;
+}
+.product-card-inner {
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 665px;
+}
+.product-card {
+    height: 665px;
+}
+.hidden-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.hidden-label .auction-date {
+    margin-top: 0;
+}
+.hidden-label .auction-date span {
+    color: #FFF;
+}
+.hidden-label .auction-date span svg path {
+    stroke: #fff;
+}
+.hidden-label .hidden-label-btn {
+    display: flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #9FAAE9;
+    color: #9FAAE9;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 auto;
+}
+.hidden-label .hidden-label-btn:hover {
+    background: #FFF;
+    color: #484848;
+}
+.hidden-label .hidden-label-btn:hover svg path {
+    fill: #484848;
+}
+.product-card-inner:hover {
+    height: unset;
+}
+.product-card-inner:hover .hidden-label{
+    height: auto;
+    padding: 20px;
+}
+.product-row-card .pink-btn {
+    margin-left: auto;
+}
+.product-col {
+    gap: 35px;
+}
+.product-col .red-label {
+    width: 100%;
+}
+@media (max-width:715px) {
+    .auction-wrapper .products-cards {
+        justify-content: center;
+    }
+}
+@media (max-width:500px) {
+    .product-row-card .pink-btn {
+        margin: 0;
+    }
+}

@@ -1,0 +1,108 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/vanilla-calendar.min.css);
+@import url(../../assets/styles/light.min.css);
+@import url(../auction-nedv/auction-nedvizh.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+
+.product-row-card .product-image {
+    width: 159px;
+    height: 159px;
+    margin-right: 0;
+}
+.product-row-card {
+    width: 100%;
+    padding: 20px;
+    height: fit-content;
+    gap: 30px;
+}
+.product-row-card .product-column {
+    padding: 0;
+}
+.product-row-card .product-code {
+    color: #484848;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+    display: none;
+}
+.product-row-card .auction-date {
+    flex-direction: row;
+    margin-top: 0;
+}
+.product-row-card .product-column .product-card-row {
+    gap: 30px;
+}
+.product-row-card .product-col {
+    padding: 0;
+    max-width: 217px;
+    width: 100%;
+    gap: 10px;
+    padding-left: 30px;
+    border-left: 1px solid #EDEFF8;
+}
+.green-btn {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #8AB73A;
+}
+.product-row-card .product-col .green-btn {
+    width: 100%;
+}
+.p-price-comm {
+    color: #484848;
+    text-align: center;
+    font-family: Rounded Mplus 1c;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+}
+.product-row-card .product-col .product-price-new span {
+    font-size: 25px;
+}
+.product-row-card .auction-date span{
+    color: #484848;
+}
+.product-row-card .auction-date span svg path{
+    stroke:#484848;
+}
+.product-row-card .product-column {
+    gap: 14px;
+}
+
+.product-row-card:hover .product-code {
+    display: block;
+}
+.product-row-card:hover .product-image {
+    border: 5px solid var(--green);
+}
+.auction-wrapper {
+    width: 100%;
+}
+.auction-wrapper .products-cards {
+    width: 100%;
+    justify-content: space-between;
+}
+.auction-body .controls {
+    justify-content: center;
+}
+.product-card .green-btn {
+    display: none;
+}
+.product-card:hover .green-btn,
+.product-card:hover .auction-date{
+    display: flex;
+}
+@media (max-width:715px) {
+    .auction-wrapper .products-cards {
+        justify-content: center;
+    }
+}

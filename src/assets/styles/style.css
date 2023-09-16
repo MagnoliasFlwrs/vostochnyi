@@ -331,6 +331,23 @@ body {
     font-weight: 500;
     line-height: normal;
 }
+.pink-btn {
+    display: flex;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 7px;
+    background: #D53692;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
 .product-name {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -729,6 +746,9 @@ body {
 }
 .regions-list li:hover {
     color: var(--green);
+}
+.auction-wrapper {
+    transition: height 0.5s ease;
 }
 @media (max-width:1200px) {
     .products-cards {

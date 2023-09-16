@@ -180,17 +180,17 @@ const swiper = new Swiper('.variables-swiper', {
           HTMLInputElement.value = `${dates[0]} — ${dates[dates.length - 1]}`;
           setTimeout(()=> {
             calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
-          }, 2000)
+          }, 1000)
         } else if (dates[0]) {
           HTMLInputElement.value = dates[0];
           setTimeout(()=> {
             calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
-          }, 2000)
+          }, 1000)
         } else {
           HTMLInputElement.value = '';
           setTimeout(()=> {
             calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
-          }, 2000)
+          }, 1000)
         }
 
       },
