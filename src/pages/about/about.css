@@ -71,13 +71,17 @@
     line-height: 170%;
     color: var(--gray);
 }
-
+.slider-container {
+    width: 100%;
+}
 .about-swiper {
     padding: 50px 0 0;
+    overflow: hidden;
 }
 .about-swiper .swiper-slide {
     border-radius: 10px;
     overflow: hidden;
+    width: 229px !important;
 }
 .about-swiper .swiper-slide img {
     border-radius: 10px;

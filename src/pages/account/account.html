@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./account.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-desctop">
+            <div class="header-row">
+                <div class="content">
+                    <div class="header-row-inner">
+                        <a href="#" class="el-torg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M2 3C2 2.44772 2.44772 2 3 2H11C11.2652 2 11.5196 2.10536 11.7071 2.29289L21.7071 12.2929C22.0976 12.6834 22.0976 13.3166 21.7071 13.7071L13.7071 21.7071C13.3166 22.0976 12.6834 22.0976 12.2929 21.7071L2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3ZM4 4V10.5858L13 19.5858L19.5858 13L10.5858 4H4Z" fill="#8AB73A"/>
+                                <path d="M9 7.5C9 8.32843 8.32843 9 7.5 9C6.67157 9 6 8.32843 6 7.5C6 6.67157 6.67157 6 7.5 6C8.32843 6 9 6.67157 9 7.5Z" fill="#8AB73A"/>
+                              </svg>
+                              <span>Электронные торги</span>
+                        </a>
+                        <ul class="phone-wrap">
+                            <li class="phone-link">
+                                <a class="phone-dropdown" href="#">+375 17 266 53 13</a>
+                                <ul class="phone-content">
+                                    <li>
+                                        <a href="tel:+375172665343">
+                                            <img src="../../assets/images/header/phone.png" alt="phone-icon" width="24" height="24">
+                                            <span>+375 17 266-53-43</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../assets/images/header/telegram.png" alt="telegram" width="24" height="24">
+                                            <span>Написать в Telegram</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../assets/images/header/viber.png" alt="viber" width="24" height="24">
+                                            <span>Написать в Viber</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../assets/images/header/watsapp.png" alt="watsapp" width="24" height="24">
+                                            <span>Написать в WhatsApp</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="lang">
+                                <a class="lang-link" href="#">RU</a>
+                                <ul class="lang-content">
+                                    <li><a href="#">RU</a></li>
+                                    <li><a href="#">BY</a></li>
+                                </ul>
+                            </li>
+                            <li class="eye-type">
+                                <a  href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M2 12C2 12 5.63636 5 12 5C18.3636 5 22 12 22 12C22 12 18.3636 19 12 19C5.63636 19 2 12 2 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-row">
+                <div class="content">
+                    <div class="header-row-inner">
+                        <a href="/" class="logo">
+                            <img src="../../assets/images/header/logo.png" alt="logo" width="200" height="51">
+                        </a>
+                        <div class="header-field">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit" class="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="#8AB73A"/>
+                              </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="link-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Избранное</span>
+                        </a>
+
+                        <a href="#" class="link-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#8AB73A"/>
+                                <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#8AB73A"/>
+                                <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#8AB73A"/>
+                                </svg>
+                                <span>Корзина</span>
+                        </a>
+
+                        <a href="#" class="link-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4ZM6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8ZM8 18C6.34315 18 5 19.3431 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 18.2386 5.23858 16 8 16H16C18.7614 16 21 18.2386 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 19.3431 17.6569 18 16 18H8Z" fill="#8AB73A"/>
+                                </svg>
+                                <span>Личный кабинет</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-row">
+                <div class="content">
+                    <div class="header-row-inner">
+                        <ul class="row-navigation">
+                            <li class="row-navigation-item dropdown1">
+                                <a class="dropdown " href="#">Интернет-магазин</a>
+                                <ul class="dropdown-menu dropdown-menu1">
+                                    <li class="dropright-item">
+                                        <a class="dropright" href="#">Одежда, обувь, головные уборы, ткани, кожа</a>
+                                        <ul class="dropright-list">
+                                            <li><a href="#">Обувь</a></li>
+                                            <li><a href="#">Ткани, трикотажные полотна и текстильные материалы</a></li>
+                                            <li><a href="#">Украшения, бижутерия</a></li>
+                                            <li><a href="#">Швейные изделия, одежда, предметы одежды</a></li>
+                                            <li><a href="#">Шкуры и выделанная кожа</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Подарочная продукция</a></li>
+                                    <li><a class="dropright" href="#">Спорт, отдых, увлечения</a></li>
+                                    <li><a class="dropright" href="#">Биотовары, корма для животных</a></li>
+                                    <li><a class="dropright" href="#">Бумага, канцелярские товары, печатные изданиия</a></li>
+                                    <li><a href="#">Ветеринарное оборудование и принадлежности</a></li>
+                                    <li><a class="dropright" href="#">Галантерея, парфюмерия</a></li>
+                                    <li><a class="dropright" href="#">Запчасти, оборудование, все для транспорта</a></li>
+                                </ul>
+                            </li>
+                            <li class="row-navigation-item">
+                                <a class="dropdown" href="#">Ваш выбор</a>
+                            </li>
+                            <li class="row-navigation-item dropdown2">
+                                <a class="dropdown " href="#">Автотранспорт</a>
+                                <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="#">Аукционы</a></li>
+                                    <li><a href="#">Автозапчасти</a></li>
+                                </ul>
+                            </li>
+                            <li class="row-navigation-item dropdown3">
+                                <a class="dropdown " href="#">Недвижимость</a>
+                                <ul class="dropdown-menu dropdown-menu3">
+                                    <li><a href="#">Аукционы</a></li>
+                                    <li><a href="#">Аукцион на право заключения договора аренды</a></li>
+                                    <li><a href="#">Аренда</a></li>
+                                </ul>
+                            </li>
+                            <li class="row-navigation-item dropdown4">
+                                <a class="dropdown dropdown4" href="#">Услуги</a>
+                                <ul class="dropdown-menu dropdown-menu4">
+                                    <li><a href="#">Организация и проведение аукционов</a></li>
+                                    <li><a href="#">Оценка имущества</a></li>
+                                    <li><a href="#">Аренда недвижимости</a></li>
+                                    <li><a href="#">Реклама</a></li>
+                                    <li><a href="#">Перевозка грузов и транспортных средств</a></li>
+                                    <li><a href="#">СТО</a></li>
+                                    <li><a href="#">Хранение имущества</a></li>
+                                    <li><a href="#">Хранение транспортных средств</a></li>
+                                </ul>
+                            </li>
+                            <li class="row-navigation-item">
+                                <a href="#">Каталог конфиската</a>
+                            </li>
+                            <li class="row-navigation-item dropdown5">
+                                <a class="dropdown" href="#">О компании</a>
+                                <ul class="dropdown-menu dropdown-menu5">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Вакансии</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="content">
+                <a href="/" class="logo">
+                    <img src="../../assets/images/header/logo.png" alt="logo" width="130" height="31">
+                </a>
+                <span class="burger">
+                    <img src="../../assets/images/header/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="burger">
+                </span>
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-head">
+                    <a href="/" class="logo">
+                        <img src="../../assets/images/header/logo.png" alt="logo" width="130" height="31">
+                    </a>
+                    <img class="menu-close-icon" src="../../assets/images/header/close-svgrepo-com.svg" alt="close-icon">
+                </div>
+                <div class="mobile-inner">
+                    <ul class="mobile-inner-list list-1">
+                        <li class="dropdown-inner">
+                            <a class="mobile-list-title mobile-dropdown-item" href="#">Интернет-магазин</a>
+                            <ul class="mobile-submenu">
+                                <li class="dropdown-inner">
+                                    <a class=" mobile-dropdown-item" href="#">Одежда, обувь, головные уборы, ткани, кожа</a>
+                                    <ul class="mobile-submenu">
+                                        <li><a href="#">Обувь</a></li>
+                                        <li><a href="#">Ткани, трикотажные полотна и текстильные материалы</a></li>
+                                        <li><a href="#">Украшения, бижутерия</a></li>
+                                        <li><a href="#">Швейные изделия, одежда, предметы одежды</a></li>
+                                        <li><a href="#">Шкуры и выделанная кожа</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Подарочная продукция</a></li>
+                                <li><a href="#">Спорт, отдых, увлечения</a></li>
+                                <li><a href="#">Биотовары, корма для животных</a></li>
+                                <li><a href="#">Бумага, канцелярские товары, печатные изданиия</a></li>
+                                <li><a href="#">Ветеринарное оборудование и принадлежности</a></li>
+                                <li><a href="#">Галантерея, парфюмерия</a></li>
+                                <li><a href="#">Запчасти, оборудование, все для транспорта</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="mobile-list-title" href="#">Ваш выбор</a>
+                        </li>
+                        <li class="dropdown-inner">
+                            <a class="mobile-list-title mobile-dropdown-item" href="#">Автотранспорт</a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Аукционы</a></li>
+                                <li><a href="#">Автозапчасти</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-inner">
+                            <a class="mobile-list-title mobile-dropdown-item" href="#">Недвижимость</a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Аукционы</a></li>
+                                <li><a href="#">Аукцион на право заключения договора аренды</a></li>
+                                <li><a href="#">Аренда</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-inner">
+                            <a class="mobile-list-title mobile-dropdown-item" href="#">Услуги</a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">Организация и проведение аукционов</a></li>
+                                <li><a href="#">Оценка имущества</a></li>
+                                <li><a href="#">Аренда недвижимости</a></li>
+                                <li><a href="#">Реклама</a></li>
+                                <li><a href="#">Перевозка грузов и транспортных средств</a></li>
+                                <li><a href="#">СТО</a></li>
+                                <li><a href="#">Хранение имущества</a></li>
+                                <li><a href="#">Хранение транспортных средств</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="mobile-list-title " href="#">Каталог конфиската</a>
+                        </li>
+                        <li class="dropdown-inner">
+                            <a class="mobile-list-title mobile-dropdown-item" href="#">О компании</a>
+                            <ul class="mobile-submenu">
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-contacts">
+                        <li>
+                            <a class="link-wrap" href="tel:+375172665343">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18.9996 15.4817V17.5893C19.0004 17.7849 18.9602 17.9786 18.8817 18.1578C18.8031 18.3371 18.6879 18.498 18.5435 18.6303C18.399 18.7626 18.2285 18.8633 18.0428 18.9259C17.8571 18.9886 17.6603 19.0119 17.465 18.9943C15.299 18.7594 13.2183 18.0207 11.3902 16.8376C9.68945 15.7589 8.24748 14.3198 7.16674 12.6224C5.9771 10.7897 5.23677 8.70306 5.00571 6.53156C4.98812 6.33729 5.01126 6.1415 5.07364 5.95664C5.13603 5.77178 5.2363 5.60191 5.36807 5.45785C5.49984 5.31378 5.66022 5.19868 5.839 5.11986C6.01779 5.04105 6.21106 5.00025 6.40651 5.00007H8.51826C8.85987 4.99671 9.19105 5.11744 9.45007 5.33976C9.70909 5.56208 9.87828 5.87081 9.92609 6.20841C10.0152 6.88287 10.1805 7.54511 10.4188 8.18249C10.5135 8.43394 10.534 8.70721 10.4779 8.96993C10.4218 9.23265 10.2913 9.4738 10.1021 9.66481L9.20809 10.557C10.2102 12.3158 11.6693 13.7721 13.4316 14.7721L14.3256 13.8799C14.517 13.6911 14.7586 13.5609 15.0218 13.5049C15.2851 13.4488 15.5589 13.4693 15.8108 13.5638C16.4495 13.8016 17.113 13.9666 17.7888 14.0556C18.1308 14.1037 18.4431 14.2756 18.6663 14.5386C18.8895 14.8015 19.0081 15.1372 18.9996 15.4817Z" stroke="#8AB73A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <span>+375 17 266-53-43</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#8AB73A"/>
+                                    <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#8AB73A"/>
+                                    <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#8AB73A"/>
+                                    </svg>
+                                    <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4ZM6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8ZM8 18C6.34315 18 5 19.3431 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 18.2386 5.23858 16 8 16H16C18.7614 16 21 18.2386 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 19.3431 17.6569 18 16 18H8Z" fill="#8AB73A"/>
+                                    </svg>
+                                    <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="head-row">
+            <div class="content">
+                <ul class="breadcrumbs">
+                    <li><a href="/">Главная</a></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13 15L16 12L13 9" stroke="#555E91" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 15L11 12L8 9" stroke="#555E91" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </li>
+                    <li class="last-breadcrumb"><a href="#">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-wrapper">
+            <div class="content">
+                <h1>Личный кабинет</h1>
+            <ul class="tabs-panel">
+                <li data-num="0" class="active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4ZM6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8ZM8 18C6.34315 18 5 19.3431 5 21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21C3 18.2386 5.23858 16 8 16H16C18.7614 16 21 18.2386 21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 19.3431 17.6569 18 16 18H8Z" fill="#ffffff"/>
+                      </svg>
+                      Личные данные
+                </li>
+                <li data-num="1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Магазины
+                </li>
+                <li data-num="2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_613_9099)">
+                          <path d="M7 7H7.01M20.59 13.41L13.42 20.58C13.2343 20.766 13.0137 20.9135 12.7709 21.0141C12.5281 21.1148 12.2678 21.1666 12.005 21.1666C11.7422 21.1666 11.4819 21.1148 11.2391 21.0141C10.9963 20.9135 10.7757 20.766 10.59 20.58L2 12V2H12L20.59 10.59C20.9625 10.9647 21.1716 11.4716 21.1716 12C21.1716 12.5284 20.9625 13.0353 20.59 13.41Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_613_9099">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Участие в аукционах
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="account-body">
+            <div class="tab-container">
+                <div data-num="0" class="tab-content active">
+                    <div class="content">
+                        <div class="content-1">
+                            <div class="content-1-cols">
+                                <div class="col">
+                                    <div class="chapter">
+                                        <p class="chapter-title">Наименование организации</p>
+                                        <h2>Компания ООО “Рога и копыта”</h2>
+                                        <div class="item">
+                                            <span>УНП:</span>
+                                            <div class="item-value" contenteditable="true">№ 101200473</div>
+                                        </div>
+                                    </div>
+                                    <div class="radiobtns">
+                                            <div>
+                                            <input type="radio" name="rb" id="rb1" checked> <label for="rb1">Резидент</label>
+                                            </div>
+
+                                            <div>
+                                            <input type="radio" name="rb" id="rb2"> <label for="rb2">Нерезидент</label>
+                                            </div>
+                                    </div>
+                                    <div class="chapter">
+                                        <p class="chapter-title">Банковские реквизиты</p>
+                                        <div class="item">
+                                            <span>ОКПО:</span>
+                                            <div class="item-value" contenteditable="true">03371300</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Адрес:</span>
+                                            <div class="item-value" contenteditable="true">220040, г. Минск, ул. Максима Грького, 153  </div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Расчетный счет:</span>
+                                            <div class="item-value" contenteditable="true"> BY18BLBB30120109911473001001</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Банк:</span>
+                                            <div class="item-value" contenteditable="true"> ЦБУ № 538 ОАО «Белинвестбанк» г. Минск, ул. Коржа,11А  BIC SWIFT BLBBBY2X </div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Транзитный счет:</span>
+                                            <div class="item-value" contenteditable="true">BY18BLBB30130100211473001001 ЦБУ № 538 ОАО «Белинвестбанк»
+                                                г. Минск, ул. Коржа,11А BIC SWIFT BLBBBY2X   </div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Юридический адрес:</span>
+                                            <div class="item-value" contenteditable="true">309516, Беларусь, город Минск, Проспект АЛЕКСЕЯ УГАРОВА, 11, офис 21 </div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Почтовый адрес:</span>
+                                            <div class="item-value" contenteditable="true">309516, Беларусь, город Минск, Проспект АЛЕКСЕЯ УГАРОВА, 11, офис 21 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="chapter">
+                                        <p class="chapter-title">Данные владельца</p>
+                                        <div class="item">
+                                            <span>Фамилия:</span>
+                                            <div class="item-value" contenteditable="true">Петров</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Имя:</span>
+                                            <div class="item-value" contenteditable="true">Иван</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Отчество:</span>
+                                            <div class="item-value" contenteditable="true">Васильевич</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>E-mail:</span>
+                                            <div class="item-value" contenteditable="true">info@mail.ru</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Телефон:</span>
+                                            <div class="item-value" contenteditable="true">+375 44 111-11-11</div>
+                                        </div>
+                                        <div class="item">
+                                            <span>Пароль</span>
+                                            <div class="item-value" contenteditable="true"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-agreement">
+                                <label class="custom-checkbox agreement">
+                                    <input class="hidden-checkbox" type="checkbox">
+                                    <span class="checkbox">
+                                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                                    </span>
+                                    <span>Даю согласие на <a href="#">обработку персональных данных</a> </span>
+                                </label>
+                                <button class="change-submit" type="submit">Сохранить изменения</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-num="1" class="tab-content ">
+                    <div class="content-3">
+                        <div class="bonus">
+                            <div class="content">
+                                <p>Ваши накопления:</p>
+                                <h2>5069 баллов</h2>
+                                <a href="#">Условия бонусной программы</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-num="2" class="tab-content">
+                    <div class="content">
+                        <div class="content-2">
+                            <h2>Документы для участия в аукционе</h2>
+                            <form>
+                                <label for="fio">
+                                    <p>Представьтесь <span>*</span></p>
+                                    <input type="text" name="fio" placeholder="ФИО">
+                                </label>
+                                <label for="email">
+                                    <p>Элетронная почта <span>*</span></p>
+                                    <input type="email" name="email" placeholder="E-mail">
+                                </label>
+                                <label >
+                                    <p>Вид аукциона</p>
+                                    <div class="auction">
+                                        <p data-current="1">Не выбран</p>
+                                        <ul class="auction-list">
+                                            <li data-value="1">Не выбрано</li>
+                                            <li data-value="2">Автотранспорт</li>
+                                            <li data-value="3">Недвижимость</li>
+                                        </ul>
+                                    </div>
+                                </label>
+                                <label for="lot">
+                                    <p>Номер лота</p>
+                                    <input type="text" name="lot" placeholder="0000001">
+                                </label>
+                                <div class="fileform">
+                                    <div class="selectbutton">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.30664 13.3763L12.8739 3.43399C14.7138 1.522 17.7802 1.522 19.6201 3.43399C21.46 5.34598 21.46 8.53264 19.6201 10.4446L8.45828 22.044C7.2317 23.3187 5.26916 23.3187 3.91993 22.044C2.69336 20.7693 2.69336 18.7299 3.91993 17.3278L5.63715 15.5433L13.4872 7.38543C14.1005 6.7481 15.0818 6.7481 15.6951 7.38543C16.3084 8.02276 16.3084 9.04249 15.6951 9.67982L11.1567 14.3961L7.84499 17.8376" stroke="#555E90" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      Прикрепить документ...
+                                    </div>
+                                    <input id="upload" type="file" name="upload" />
+                                </div>
+                                <button>Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer blue-footer">
+        <div class="content">
+            <div class="footer-row">
+                <a href="/" class="logo">
+                    <img src="../../assets/images/header/logo.png" alt="logo" width="200" height="51">
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/telegram.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/odnoklassniki.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/vk.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/twitter.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/instagram.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/images/footer/facebook.png" alt="social-icon" width="34" height="34">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <ul class="footer-col">
+                    <li class="footer-phone">
+                        <a href="tel:+375 (17) 266-53-13">+375 (17) 266-53-13</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9V2H18V9" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 14H6V22H18V14Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>+375 (17) 266-53-43 (факс)</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>220125, г. Минск, ул. Уручская, 14 А</span>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@vostochny.by">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              <span>mail@vostochny.by</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="footer-qr">
+                            <img src="../../assets/images/footer/qr.png" alt="qr-icon" width="81" height="81">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer-col">
+                    <li>Документы</li>
+                    <li><a href="#">Административные процедуры</a> </li>
+                    <li><a href="#">Прейскурант отпускных цен по услугам</a> </li>
+                    <li><a href="#">Политика конфиденциальности</a> </li>
+                    <li><a href="#">Часто задаваемые вопросы</a> </li>
+                </ul>
+                <ul class="footer-col">
+                    <li>Информация</li>
+                    <li><a href="#">Обращение граждан и юридических лиц</a> </li>
+                    <li><a href="#">Противодействие коррупции</a> </li>
+                    <li><a href="#">Оценка качества оказанных услуг</a> </li>
+                </ul>
+                <ul class="footer-col">
+                    <li>Карта сайта</li>
+                    <li><a href="#">Интернет-магазин</a> </li>
+                    <li><a href="#">Ваш Выбор</a> </li>
+                    <li><a href="#">Автотранспорт</a> </li>
+                    <li><a href="#">Недвижимость</a> </li>
+                    <li><a href="#">Услуги</a> </li>
+                    <li><a href="#">Каталог конфиската</a> </li>
+                    <li><a href="#">О компании</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="content">
+            <div class="footer-info">
+                <p>Сервисно-торговое республиканское унитарное предприятие "ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ" Управления делами Президента Республики Беларусь ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ".Свидетельство о государственной регистрации выдано Минским горисполкомом от 22.07.2024 г. с регистрационным номером 1475. Зарегистрирован в Торговом реестре Республики Беларусь 17.10.2016 №355491. УНП 101127633.Юр. адрес: 220125, г. Минск, ул. Уручская, 14 А.Время работы с понедельника по пятницу с 9:00 до 17:00. Контакты: +375 (17) 266-53-13, mail@vostochny.by.Уполномоченный на рассмотрение обращений покупателей: директор РУП "ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ" Михалькевич А.И., запись по телефону +375 17 ххх-хх-хх.Уполномоченные по защите прав потребителей: отдел торговли и услуг администрации Фрунзенского района г. Минска, +375 17 348-39-06, +375 17 272-73-84.</p>
+                <p>2023 © РУП “Торговый дом ”Восточный”</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/vanilla-calendar.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

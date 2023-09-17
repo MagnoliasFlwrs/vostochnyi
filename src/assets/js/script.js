@@ -124,6 +124,8 @@ const swiper = new Swiper('.variables-swiper', {
 
   });
 
+
+
   var swiper4 = new Swiper(".gallery-mini", {
     spaceBetween: 10,
     slidesPerView: 4,
@@ -210,6 +212,9 @@ const regionsSelectBody = document.querySelector('.regions-list');
 const shopSelect = document.querySelector('.shops');
 const shopsOptions = document.querySelectorAll('.shops-list li');
 const shopsSelectBody = document.querySelector('.shops-list');
+const auctionSelect = document.querySelector('.auction');
+const  auctionOptions = document.querySelectorAll('.auction-list li');
+const  auctionSelectBody = document.querySelector('.auction-list');
 
 if (regionSelect) {
   regionSelect.addEventListener('mouseenter' , () => {
@@ -238,6 +243,21 @@ if (shopSelect) {
       shopSelect.querySelector('p').innerHTML = el.innerHTML;
       shopSelect.dataset.current = el.dataset.value;
       shopsSelectBody.classList.remove('active');
+    })
+  })
+}
+if (auctionSelect) {
+  auctionSelect.addEventListener('mouseenter' , () => {
+    auctionSelectBody.classList.add('active');
+  })
+  auctionSelect.querySelector('p').addEventListener('click' , () => {
+    auctionSelectBody.classList.add('active');
+  })
+  auctionOptions.forEach(el => {
+    el.addEventListener('click' , ()=> {
+      auctionSelect.querySelector('p').innerHTML = el.innerHTML;
+      auctionSelect.dataset.current = el.dataset.value;
+      auctionSelectBody.classList.remove('active');
     })
   })
 }
