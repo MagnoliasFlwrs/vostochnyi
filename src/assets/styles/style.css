@@ -773,6 +773,9 @@ body {
     .controls {
         flex-wrap: wrap;
     }
+    .controls {
+        gap: 15px;
+    }
 }
 @media (max-width:1450px) {
     .filter .content {
