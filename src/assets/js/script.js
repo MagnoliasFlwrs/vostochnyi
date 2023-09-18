@@ -96,6 +96,7 @@ const swiper = new Swiper('.variables-swiper', {
 
   const swiper3 = new Swiper('.about-swiper', {
     loop: true,
+    spaceBetween: 10,
     slidesPerView: 1,
     navigation: {
       nextEl: '.about-btn-next',

@@ -1,0 +1,280 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+.head-row {
+    padding: 25px 0;
+}
+.breadcrumbs  {
+    margin-bottom: 0;
+}
+.rules-body {
+    padding: 25px 0 50px;
+}
+h1 {
+    color: #555E90;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 100%; /* 70px */
+}
+.rules-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.rules-body .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+h2 {
+    color: #555E90;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 68px */
+}
+.text {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.text p {
+    color: #484848;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 42.5px */
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+.list li {
+    color: #484848;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 42.5px */
+    display: flex;
+    gap: 30px;
+}
+.list li .underline , .underline {
+    color: #484848;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    text-decoration-line: underline;
+}
+.colored-underline  {
+    color: #2AA1DD;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    text-decoration-line: underline;
+}
+.list li::before {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L17.5858 12L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289ZM6.29289 5.29289C6.68342 4.90237 7.31658 4.90237 7.70711 5.29289L13.7071 11.2929C13.8946 11.4804 14 11.7348 14 12C14 12.2652 13.8946 12.5196 13.7071 12.7071L7.70711 18.7071C7.31658 19.0976 6.68342 19.0976 6.29289 18.7071C5.90237 18.3166 5.90237 17.6834 6.29289 17.2929L11.5858 12L6.29289 6.70711C5.90237 6.31658 5.90237 5.68342 6.29289 5.29289Z' fill='%238AB73A'/%3E%3C/svg%3E");
+    display: block;
+    margin-top: 10px;
+}
+.links-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links-row a {
+    display: flex;
+    padding: 15px 40px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background: #555E90;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+.documents-wrapper {
+    display: flex;
+    gap: 50px;
+}
+.documents-inner {
+    width: calc((100% - 50px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.link-card {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    border: 1px solid #DEE2F6;
+}
+.link-card p {
+    color: #484848;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+.link-card p span {
+    color: #484848;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.link-card a {
+    display: flex;
+    padding: 15px 40px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background: #555E90;
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 42.5px */
+}
+.viewed {
+    background: #F8F9FF;
+}
+.viewed-slider-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 50px 0 100px;
+}
+.viewed-btn-prev , .viewed-btn-next {
+    border-radius: 5px;
+    background: #555E90;
+    display: flex;
+    width: 29px;
+    height: 29px;
+    justify-content: center;
+    align-items: center;
+}
+.viewed-swiper .swiper-slide {
+    max-width: 435px !important;
+    width: 100%;
+}
+.viewed-card {
+    display: flex;
+    /* width: 435px; */
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.viewed-card .product-image {
+    display: flex;
+    width: 135px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 232.759px;
+}
+.viewed-swiper .swiper-wrapper {
+    padding: 5px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.viewed-card .product-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+.viewed-card .product-price-old {
+    margin-top: 20px;
+}
+.viewed-card  .product-price-new span {
+    font-size: 25px;
+}
+.viewed-card .product-image {
+    margin-bottom: 0;
+}
+@media (max-width:1024px) {
+    h1 {
+        font-size: 35px;
+    }
+    .rules-body img {
+        height: 200px;
+    }
+    .rules-body .content {
+        gap: 30;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .text {
+        padding: 0;
+        gap: 30px;
+    }
+    .text p , .list li , .list li .underline , .underline , .colored-underline  {
+        font-size: 20px;
+    }
+    .documents-wrapper {
+        flex-direction: column;
+    }
+    .documents-inner {
+        width: 100%;
+    }
+    .links-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .list {
+        padding-left: 0;
+    }
+    .list li {
+        gap: 15px;
+    }
+}
+@media (max-width:550px) {
+    .viewed-card {
+        flex-direction: column;
+    }
+    .viewed-swiper {
+        overflow: hidden;
+    }
+    .viewed-swiper .swiper-slide {
+        max-width: 95% !important;
+        width: 100%;
+    }
+    .viewed-swiper .swiper-wrapper {
+        padding: 10px;
+    }
+    .list li {
+        font-size: 16px;
+    }
+}
