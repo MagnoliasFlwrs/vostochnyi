@@ -205,6 +205,8 @@ const swiper = new Swiper('.variables-swiper', {
   calendar2.init();
   const calendar3 = new VanillaCalendar('#calendar-input-div' , options);
   calendar3.init();
+  const calendar4 = new VanillaCalendar('#calendar-input-div4' , options);
+  calendar4.init();
 // custom select
 
 const regionSelect =  document.querySelector('.regions');
