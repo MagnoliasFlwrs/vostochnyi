@@ -130,9 +130,18 @@ const swiper = new Swiper('.variables-swiper', {
   var swiper4 = new Swiper(".gallery-mini", {
     spaceBetween: 10,
     slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-   
+    // freeMode: true,
+    // watchSlidesProgress: true,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".gallery-mini-button-next",
+      prevEl: ".gallery-mini-button-prev",
+    },
+    breakpoints: {
+      1200: {
+        direction: "vertical",
+      }
+    },
   });
   var swiper5 = new Swiper(".gallery", {
     spaceBetween: 10,
