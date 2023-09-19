@@ -132,6 +132,7 @@ const swiper = new Swiper('.variables-swiper', {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+   
   });
   var swiper5 = new Swiper(".gallery", {
     spaceBetween: 10,
@@ -145,7 +146,7 @@ const swiper = new Swiper('.variables-swiper', {
   });
   const swiper6 = new Swiper('.viewed-swiper', {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     navigation: {
       nextEl: '.viewed-btn-next',
       prevEl: '.viewed-btn-prev',
@@ -207,6 +208,8 @@ const swiper = new Swiper('.variables-swiper', {
   calendar3.init();
   const calendar4 = new VanillaCalendar('#calendar-input-div4' , options);
   calendar4.init();
+  const calendar5 = new VanillaCalendar('#calendar-input-div5' , options);
+  calendar5.init();
 // custom select
 
 const regionSelect =  document.querySelector('.regions');

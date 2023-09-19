@@ -109,7 +109,7 @@ h1 {
     gap: 30px;
     align-items: center;
 }
-.auction-notices-body {
+.results-body {
     background-color: #F8F9FF;
     padding: 50px 0 100px;
 }
@@ -117,12 +117,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 30px;
     row-gap: 50px;
 }
-
 .card {
     display: flex;
-    width: 330px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -132,11 +131,19 @@ h1 {
     border: 2px solid #FFF;
     background: #F8F9FF;
     box-shadow: 0px 4px 14px -6px rgba(85, 94, 144, 0.25);
+    width: calc((100% - 60px)/3);
 }
-.card:hover {
-    background: #fff;
+.row {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
-.green-label {
+.row span:first-child {
+    color: #484848;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .title {
     color: #484848;
@@ -144,13 +151,6 @@ h1 {
     font-style: normal;
     font-weight: 800;
     line-height: 170%; /* 42.5px */
-}
-.description {
-    color: #484848;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 170%; /* 34px */
 }
 .card-link {
     display: flex;
@@ -174,13 +174,14 @@ h1 {
 .controls {
     margin-top: 50px;
 }
-
-
+.card:hover {
+    background: #fff;
+}
+.card:hover .title {
+    color: var(--green);
+}
 
 @media (max-width:1024px) {
-    h1 {
-        font-size: 35px;
-    }
     .card {
         width: calc((100% - 30px)/2);
     }
