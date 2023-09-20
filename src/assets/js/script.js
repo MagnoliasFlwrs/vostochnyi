@@ -173,6 +173,28 @@ const swiper = new Swiper('.variables-swiper', {
     },
 
   });
+  var swiper7 = new Swiper(".news-gallery-mini", {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    direction: "horizontal",
+    breakpoints: {
+      450: {
+        slidesPerView: 2,
+      },
+      750: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    },
+  });
+  var swiper8 = new Swiper(".news-gallery", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper7,
+    },
+  });
 
 
   const options = {
