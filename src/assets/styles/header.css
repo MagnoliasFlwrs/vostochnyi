@@ -203,6 +203,9 @@
     line-height: normal;
     color: var(--light-gray);
 }
+.link-wrap:hover {
+    color: var(--green);
+}
 .link-wrap svg {
     width: 24px;
     height: 24px;

@@ -101,6 +101,7 @@
     height: 15px;
     border-radius: 5px;
     background-color: #C6CAE2;
+    cursor: pointer;
 }
 .pagination-bullet.active {
     background-color: #555E90;

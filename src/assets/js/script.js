@@ -68,6 +68,26 @@ const swiper = new Swiper('.variables-swiper', {
     },
   });
 
+  const customPagination = document.querySelectorAll('.pagination');
+  
+  customPagination.forEach(el => {
+    let bullets = el.querySelectorAll('.pagination-bullet');
+
+    function clearBulletsClass() {
+      bullets.forEach(el=> {
+        el.classList.remove('active')
+      })
+    }
+    bullets.forEach((bull , i) => {
+      bull.addEventListener('click' , (e)=> {
+        swiper.slideTo(i);
+      })
+    })
+  })
+
+
+
+
   const swiper2 = new Swiper('.partners-swiper', {
     loop: true,
     slidesPerView: 1.5,
