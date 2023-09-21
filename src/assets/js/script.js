@@ -69,7 +69,7 @@ const swiper = new Swiper('.variables-swiper', {
   });
 
   const customPagination = document.querySelectorAll('.pagination');
-  
+
   customPagination.forEach(el => {
     let bullets = el.querySelectorAll('.pagination-bullet');
 
@@ -442,3 +442,28 @@ document.querySelectorAll('.vertical-filter').forEach((el) => {
 
 
 });
+
+
+// account-modal
+
+const toAccountModal = document.querySelectorAll('.to-account-modal') ;
+const overlay = document.querySelector('.overlay');
+const accountModal = document.querySelector('.modal-account');
+
+function showAccountModal() {
+  toAccountModal.forEach(el=> {
+    el.addEventListener('click' , ()=> {
+      overlay.classList.add('open');
+      accountModal.classList.add('open');
+    })
+  })
+}
+function closeAccountModal(){
+  overlay.addEventListener('click' , ()=>{
+    overlay.classList.remove('open');
+    accountModal.classList.remove('open');
+  })
+}
+showAccountModal();
+closeAccountModal();
+
