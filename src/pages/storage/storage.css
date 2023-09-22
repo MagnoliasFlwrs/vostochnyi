@@ -105,7 +105,11 @@ h3 {
     margin-bottom: 100px;
 }
 
-
+@media (min-width:1500px) {
+    .images {
+        margin-top: 250px;
+    }
+}
 @media (max-width:1200px) {
     .storage-body .content {
         flex-direction: column;

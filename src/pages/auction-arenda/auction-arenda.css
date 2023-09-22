@@ -101,6 +101,9 @@ line-height: normal;
 .product-card:hover .auction-date{
     display: flex;
 }
+.product-name {
+    margin-bottom: 0;
+}
 @media (max-width:715px) {
     .auction-wrapper .products-cards {
         justify-content: center;

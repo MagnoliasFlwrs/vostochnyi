@@ -467,3 +467,23 @@ function closeAccountModal(){
 showAccountModal();
 closeAccountModal();
 
+
+// account-pass
+
+const edit = document.querySelector('.item-value-clicable');
+const pass = document.querySelector('#password-input');
+const icon = document.querySelector('.eye-icon')
+
+edit?.addEventListener('click' , ()=> {
+  if (pass.getAttribute('type')==='password') {
+    pass.setAttribute('type' , 'text');
+    pass.classList.add('active');
+    icon.classList.add('open');
+  } else {
+    pass.setAttribute('type' , 'password');
+    pass.classList.remove('active')
+    icon.classList.remove('open')
+  }
+  
+})
+

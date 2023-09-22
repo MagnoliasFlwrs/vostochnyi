@@ -574,7 +574,22 @@ h2 {
     display: flex;
     gap: 30px;
 }
-
+#password-input {
+    color: #484848;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+.eye-icon.open svg path {
+    fill: var(--green);
+}
+#password-input.active {
+    color: var(--green);
+}
 @media (max-width:1300px) {
     .item .item-value {
         font-size: 20px;

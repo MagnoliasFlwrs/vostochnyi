@@ -105,10 +105,10 @@ line-height: normal;
     height: auto;
 }
 .product-card {
-    height: 641px;
+    height: 700px;
 }
 .product-card:hover {
-    height: unset;
+    height: 700px;
 }
 @media (max-width:715px) {
     .auction-wrapper .products-cards {

@@ -429,7 +429,7 @@
 
 .product-card:hover .hidden-btn {
     display: flex;
-
+    justify-content: center;
 }
 .product-row-card .product-image {
     width: 159px;
